@@ -45,5 +45,32 @@ module.exports.getBooks = (callback, limit) => {
 
 // Get Book
 module.exports.getBookById = (id, callback) => {
-	Book.findById(id);
+	Book.findById(id, callback);
+}
+
+// Add Book
+module.exports.addBook = (book, callback) => {
+	Book.create(book, callback);
+}
+
+// Update Book
+module.exports.updateBook = (id, book, options, callback) => {
+	const query = {_id: id};
+	const update = {
+		title: book.title,
+		genre: book.genre,
+		description: book.description,
+		author: book.author,
+		publisher: book.publisher,
+		pages: book.pages,
+		image_url: book.image_url,
+		buy_url: book.buy_url
+	}
+	Book.findOneAndUpdate(query, update, options, callback);
+}
+
+// Delete Book
+module.exports.removeBook = (id, callback) => {
+	const query = {_id: id};
+	Book.remove(query, callback);
 }
