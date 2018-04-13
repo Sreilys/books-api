@@ -2,6 +2,8 @@
 mongod
 
 ### run project
+npm i
+
 node index.js
 
 ### with the MongoDB database books are:
