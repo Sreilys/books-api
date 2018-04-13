@@ -16,7 +16,7 @@ node index.js
 I use RESTeasy Chrome Ext for CRUD, you can also use Postman.
 
 ### MongoDB
-Access MongoDB shell with 'mongo' command on mac (you need to have it installed)
+Access MongoDB shell with ```mongo``` command on mac (you need to have it installed)
 
 A shell promt starts
 
