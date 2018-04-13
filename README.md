@@ -1,10 +1,10 @@
 ### run mongod daemon process
-mongod
+```mongod```
 
 ### run project
-npm i
+```npm i```
 
-node index.js
+```node index.js```
 
 ### with the MongoDB database books are:
 /api/books
@@ -20,17 +20,17 @@ Access MongoDB shell with ```mongo``` command on mac (you need to have it instal
 
 A shell promt starts
 
-You can type there 'show dbs' to see all your databases
+You can type there ```show dbs``` to see all your databases
 
 My database for this proj is 'bookstore'
 
-You can use an existing db with the command 'use + dbname'
+You can use an existing db with the command ```use + dbname```
 
-You can see collections with 'show collections'
+You can see collections with ```show collections```
 
-You can create collections with 'db.createCollection("books")'
+You can create collections with ```db.createCollection('books')```
 
-You can insert items in collection with 'db.books.insert({title: "My Awesome Books Title"})'
+You can insert items in collection with ```db.books.insert({title: 'My Awesome Books Title'})```
 
-You can query the database with 'db.books.find()', this will find all your books in db ...
-You can also search by attribute, for example by ID 'db.books.find("5aae2712def6a9da82df0181")'
+You can query the database with ```db.books.find()```, this will find all your books in db ...
+You can also search by attribute, for example by ID ```db.books.find('5aae2712def6a9da82df0181')```
