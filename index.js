@@ -4,15 +4,17 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose'); // object modeling
+const cors = require('cors')
 
 // bodyParser middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 const Genre = require('./models/genre.js');
 const Book = require('./models/book.js');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost/bookstore');
+mongoose.connect('mongodb://localhost/books');
 
 // Database Object
 const db = mongoose.connection;
